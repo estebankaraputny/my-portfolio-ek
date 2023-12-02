@@ -1,0 +1,22 @@
+.content-logoTool{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.name-of-logo{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.logoTools{
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    /* flex: 1 1; */
+}
