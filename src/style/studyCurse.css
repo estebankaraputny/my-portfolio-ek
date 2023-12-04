@@ -1,0 +1,21 @@
+.curso-target{
+    background-color: #141414;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin: 0.3rem 0;
+}
+
+.name-curso{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contenido-curso{
+    color:#dbdbdb;
+}
+
+.fecha-curso{
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: #999999;
+}

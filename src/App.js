@@ -3,6 +3,7 @@ import BotonNav from './components/buttonNav';
 import BotonRedes from './components/buttonNetwork';
 import myPhoto from './image/myphoto.png';
 import ImagenesTools from './components/imgTools';
+import Curso from './components/studyCurse';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <h2 className="my-name">Hi, my name is Esteban</h2>
             <div className="contenedor-rol">
               <p className="my-rol">
-                Front-End Developer.
+                Front-End Developer
                 <span className="span-maquina">
                 &nbsp;
                 </span>
@@ -116,7 +117,71 @@ function App() {
             />
           </div>
         </div>
+        <div className='content-sobre-mi'>
+          <h3 className='title-tools'>About me</h3>
+          <div className='content-info-about'>
+            <div className='presentacion'>
+              <div className="jupiter"></div>
+              <p className='description-me'>Me considero una persona que puede aportar gran valor al equipo de trabajo, entre algunas de mis fortalezas están la motivación, liderazgo, comunicación, el trabajo en equipo, la empatía, el manejo de emociones, entre otras. También, aspiro a un puesto de trabajo con un ambiente agradable, con posibilidades de mejora constantemente, aprendiendo y fortaleciendo mis conocimientos junto a mis compañeros.</p>
+              <a href='./image/cv-de-Esteban-Karaputny.pdf' class="btn" download="Cv de Esteban Karaputny">
+                <strong>Download CV</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </a>
+            </div>
+            <div className='content-education'>
+              <h3 className='education-title'>Education</h3>
+              <div className='target-education'>
+                <Curso 
+                  nameCurse="Universidad Nacional Alturo Jauretche"
+                  contenidoCurse="Ingeníeria en Informática"
+                  dateCurse="02/2022 - En curso"
+                />
+                <Curso 
+                  nameCurse="#TúEmpleo - Fundación EMPUJAR"
+                  contenidoCurse="Capacitación de habilidades blandas, Entrenamiento laboral, Líder en proyecto empresarial de remasterización web en Argenpack Corrugados S.A."
+                  dateCurse="07/2023 - 12/2023"
+                />
+                <Curso 
+                  nameCurse="Bootcamp Front-End Developer - Oracle, Alura Latam"
+                  contenidoCurse="Curso asincrónico de Developer Front-End (HTML5, CSS, JS, REACT, GIT, Metodologías, Responsive Design)."
+                  dateCurse="05/2023 - 10/2023"
+                />
+                <Curso 
+                  nameCurse="Bootcamp Front-End Developer - Accenture, Mindhub, Eidos"
+                  contenidoCurse="Desarrolador Front-End, Bootcamp intensivo. (HTML5, CSS3, JS, GITHUB, BOOTSTRAP, Metodologías, Responsive Design, etc.)."
+                  dateCurse="09/2022 - 01/2023"
+                />
+                <Curso 
+                  nameCurse="#SéProgramar - Instituto Nacional de Tecnología Industrial"
+                  contenidoCurse="Introducción a la Programación (JavaScript, Ruby)."
+                  dateCurse="02/2022 - En curso"
+                />
+                <Curso 
+                  nameCurse="Curso Desarrollo Web - Fundación EDUCANDO"
+                  contenidoCurse="Curso introducción al desarrollo web. (HTML5, CSS, BOOSTRAP, JS)."
+                  dateCurse="05/2021 - 08/2021"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='content-projects'>
+
+        </div>
+        <div className='content-contact'>
+
+        </div>
       </main>
+      <footer>
+        
+      </footer>
     </div>
   );
 }
