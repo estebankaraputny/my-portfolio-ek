@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/studyCurse.css"
 
+
 const Curso = ({ nameCurse, contenidoCurse, dateCurse }) => {
     return (
         

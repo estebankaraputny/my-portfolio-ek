@@ -1,0 +1,67 @@
+.cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 2rem;
+    flex-basis: auto;
+  }
+  
+  
+.card {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: #212121;
+}
+
+.content-img-project{
+    height: 70%;
+    width: 100%;
+}
+
+.img-project{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-info-project{
+    height: auto;
+    padding: 1rem;
+    text-align: start;
+
+}
+
+  
+.title-project{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+  
+.date-project{
+    font-size: .9rem;
+    color: #dbdbdb;
+}
+  
+.cards .card:hover {
+    transform: scale(1.2, 1.2);
+}
+  
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}

@@ -13,6 +13,7 @@
   width: 100%;
   height: 130px;
   position: fixed;
+  z-index: 10;
 }
 
 .App-nav{
@@ -176,19 +177,39 @@
   width: 50%;
 }
 
-.jupiter{
+.planet{
   width: 300px;
   height: 300px;
   margin-bottom: 3rem;
   border-radius: 50%;
+}
+
+.jupiter{
   background-image: url(./image/jupiter.png);
   background-size: cover;
   box-shadow: inset 0px 0px 20px #000,
               inset -40px -10px 20px rgba(56, 48, 3, 0.5);
-  animation: jupiter 10s linear infinite;
+  animation: planet 10s linear infinite;
 }
 
-@keyframes jupiter {
+.eart{
+  background-image: url(./image/tierra.jpg);
+  background-size: cover;
+  box-shadow: inset 0px 0px 20px #000,
+              inset -40px -10px 20px rgba(3, 34, 46, 0.5);
+  animation: planet 10s linear infinite;
+}
+
+.mart{
+  background-image: url(./image/marte.jpg);
+  background-size: cover;
+  box-shadow: inset 0px 0px 20px #000,
+              inset -40px -10px 20px rgba(61, 20, 4, 0.5);
+  animation: planet 10s linear infinite;
+}
+
+
+@keyframes planet {
   0%{
     background-position-x: 0;
   }
@@ -389,4 +410,67 @@ strong {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+/* SECCION PROYECTOS  */
+
+.content-projects{
+  background-color: #000000ea;
+  display: flex;
+}
+
+.content-info-project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-info-project h3{
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+/* SECCION CONTACT */
+
+.content-contact{
+  height: auto;
+  padding: 1rem;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-info-contact{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-form{
+  width: 60%;
+  height: 30rem;
+  padding: 1rem;
+  background-color: #000000ea;
+}
+
+.form{
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/miriam-espacio-K4EUCv5vNc0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.cont-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000ea;
 }
