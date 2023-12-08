@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .App{
@@ -32,6 +37,8 @@
   list-style: none;
 }
 
+
+/* HOME  */
 .main{
   color: aliceblue;
   background-image: url(./image/georgios-kaleadis-abtftmsocoi-unsplash-min_optimized.jpg);
@@ -232,9 +239,10 @@
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 2px transparent;
-  background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #740808 10%, #c91b1b 45%, #740808 67%, #d32b2b 87%);
+  background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #ffffff 10%, #5c5c5c 45%, #ffffff 67%, #5c5c5c 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
+  text-decoration: none;
 }
 
 #container-stars {
@@ -435,10 +443,10 @@ strong {
 .content-contact{
   height: auto;
   padding: 1rem;
-  background-color: #000;
+  background-color: #000000ee;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .content-info-contact{
@@ -449,28 +457,20 @@ strong {
   align-items: center;
 }
 
-.content-form{
-  width: 60%;
-  height: 30rem;
-  padding: 1rem;
-  background-color: #000000ea;
+.mail-contact{
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
 }
 
-.form{
-  width: 100%;
-  height: 100%;
-  background-image: url(./image/miriam-espacio-K4EUCv5vNc0-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+/* FOOTER  */
 
-
-.cont-form{
-  width: 100%;
-  height: 100%;
+.cont-info-footer{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #000000ea;
+  padding: 1rem;
+  height: 5rem;
+  color: #fff;
+  background-color: #000;
 }

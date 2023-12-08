@@ -5,6 +5,7 @@ import myPhoto from './image/myphoto.png';
 import ImagenesTools from './components/imgTools';
 import Curso from './components/studyCurse';
 import CardProyecto from './components/cardProject';
+import ContactUs  from './components/contactUs';
 
 function App() {
   return (
@@ -16,12 +17,12 @@ function App() {
               href="#inicio">
                 Home
               </BotonNav>
+              <BotonNav href="#sobremi">
+                About me
+              </BotonNav>
               <BotonNav
               href="#proyectos">
                 Projects
-              </BotonNav>
-              <BotonNav href="#sobremi">
-                About me
               </BotonNav>
               <BotonNav
               href="#contacto">
@@ -31,7 +32,7 @@ function App() {
         </nav>
       </header>
       <main className="main">
-        <div className="content-information">
+        <div className="content-information" id='inicio'>
           <div className="content-perfil">
             <h2 className="my-name">Hi, my name is Esteban</h2>
             <div className="contenedor-rol">
@@ -118,7 +119,7 @@ function App() {
             />
           </div>
         </div>
-        <div className='content-sobre-mi'>
+        <div className='content-sobre-mi' id='sobremi'>
           <div className='content-info-about'>
             <div className='presentacion'>
               <h3 className='title-tools'>About me</h3>
@@ -173,13 +174,13 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='content-projects'>
+        <div className='content-projects' id='proyectos'>
           <div className='cards'>
             <CardProyecto
               linkProject="#" 
               titleProject="To do List - React" 
               proyectoImg="desarrollo.png"
-              dateProject="En desarrollo..."
+              dateProject="Developing..."
             />
             <CardProyecto
               linkProject="https://iniciatoysstore.netlify.app/" 
@@ -190,20 +191,20 @@ function App() {
             <CardProyecto
               linkProject="https://tulugarclimaactual.netlify.app/" 
               titleProject="Web Clima - Tú lugar" 
-              proyectoImg="calculadora.jpg"
-              dateProject="Autodidacta"
+              proyectoImg="clima.jpg"
+              dateProject="Practice"
             />
             <CardProyecto
               linkProject="https://argenpackcorrugadossa.netlify.app/" 
-              titleProject="Rematerización web de Argenpack Corrugados." 
+              titleProject="Web remastering of Argenpack Corrugados." 
               proyectoImg="argenpack.jpg"
               dateProject="Programa #TúEmpleo - Fundación EMPUJAR"
             />
             <CardProyecto
               linkProject="https://calculadora-reactjs-ek.netlify.app/" 
-              titleProject="Calculadora React" 
+              titleProject="React calculator" 
               proyectoImg="calculadora.jpg"
-              dateProject="Autodidacta"
+              dateProject="Practice"
             />
             <CardProyecto
               linkProject="#" 
@@ -217,12 +218,13 @@ function App() {
             <div className='planet eart'></div>
           </div>
         </div>
-        <div className='content-contact'>
+        <div className='content-contact' id='contacto'>
           <div className='content-info-contact'>
             <h3 className='title-tools'>Contact</h3>
             <div className='planet mart'></div>
             <div>
               <p className='mail-contact'><i class="bi bi-envelope"></i> estebankaraputny18@gmail.com</p>
+              <p className='mail-contact'><i class="bi bi-whatsapp"></i> +54 9 11 6873-3666</p>
               <div className='content-networks'>
               <ul className="my-networks">
                 <BotonRedes 
@@ -252,22 +254,15 @@ function App() {
             </div>
           </div>
           <div className='content-form'>
-            <form className='form'>
-              <div className='cont-form'>
-                <label className='label-form' for="company"><i class="bi bi-buildings-fill"></i> Company mail</label>
-                <input type='text'  className='input-form' id='company'  name='company'/>
-                <label className='label-form' for="recruiter"><i class="bi bi-person-fill"></i> Recruiter name</label>
-                <input type='text' className='input-form' id='recruiter' name='recruiter'/>
-                <label className='label-form' for="message"><i class="bi bi-chat-dots-fill"></i> Message</label>
-                <textarea className='message-form' id='message' name='message'></textarea>
-                <button>Send</button>
-              </div>
-            </form>
+            <ContactUs />
           </div>
         </div>
       </main>
-      <footer>
-        
+      <footer className='content-footer'>
+        <div className='cont-info-footer'>
+          <p className='info-footer'><i class="bi bi-c-circle"></i> Copyright 2023 - All Rights Reserved</p>
+          <p className='info-footer'>Made with <i class="bi bi-heart-fill"></i> for Esteban Karaputny Front-End Developer</p>
+        </div>
       </footer>
     </div>
   );
