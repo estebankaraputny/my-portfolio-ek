@@ -6,7 +6,7 @@ const BotonRedes = (props) => {
     return (
         <li className={`child ${ props.childNumber }`}>
             <a href={ props.link } className={ props.clase }>
-                {props.children}
+                <span className="linkNav">{props.children}</span>
             </a>
         </li>
     )

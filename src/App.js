@@ -14,19 +14,28 @@ function App() {
         <nav className='App-nav'>
             <ul className='list-nav'>
               <BotonNav 
-              href="#inicio">
-                Home
+              href="#inicio"
+              relacion="Home"
+              >
+                <i class="bi bi-house iconMenu"></i>
               </BotonNav>
-              <BotonNav href="#sobremi">
-                About me
+              <BotonNav href="#sobremi"
+                relacion="About me"
+              >
+                <i class="bi bi-person iconMenu"></i>
               </BotonNav>
               <BotonNav
-              href="#proyectos">
-                Projects
+              href="#proyectos"
+              relacion="Projects"
+              >
+                <i class="bi bi-briefcase iconMenu"></i>
               </BotonNav>
               <BotonNav
-              href="#contacto">
-                Contact
+              href="#contacto"
+              relacion="Contact"
+              >
+               
+                <i class="bi bi-mailbox-flag iconMenu"></i>
               </BotonNav>
             </ul>
         </nav>
@@ -122,10 +131,12 @@ function App() {
         <div className='content-sobre-mi' id='sobremi'>
           <div className='content-info-about'>
             <div className='presentacion'>
-              <h3 className='title-tools'>About me</h3>
-              <div className="planet jupiter"></div>
+              <div className='content-info-project'>
+                <h3 className='title-tools'>About me</h3>
+                <div className="planet jupiter"></div>
+              </div>
               <p className='description-me'>I consider myself a person who can contribute great value to the work team. Some of my strengths include motivation, leadership, communication, teamwork, empathy, and emotional management, among others. Also, I aspire to a job with a pleasant environment, with possibilities for constant improvement, learning and strengthening my knowledge with my colleagues.</p>
-              <a href='./image/cv-de-Esteban-Karaputny.pdf' class="btn" download="Cv de Esteban Karaputny">
+              <a href='./image/cv-de-Esteban-Karaputny.png' class="btn" download="Cv de Esteban Karaputny">
                 <strong>Download CV</strong>
                 <div id="container-stars">
                   <div id="stars"></div>
@@ -220,8 +231,10 @@ function App() {
         </div>
         <div className='content-contact' id='contacto'>
           <div className='content-info-contact'>
-            <h3 className='title-tools'>Contact</h3>
-            <div className='planet mart'></div>
+            <div className='content-info-project'>
+              <h3 className='title-tools'>Contact</h3>
+              <div className='planet mart'></div>
+            </div>
             <div>
               <p className='mail-contact'><i class="bi bi-envelope"></i> estebankaraputny18@gmail.com</p>
               <p className='mail-contact'><i class="bi bi-whatsapp"></i> +54 9 11 6873-3666</p>
@@ -261,7 +274,7 @@ function App() {
       <footer className='content-footer'>
         <div className='cont-info-footer'>
           <p className='info-footer'><i class="bi bi-c-circle"></i> Copyright 2023 - All Rights Reserved</p>
-          <p className='info-footer'>Made with <i class="bi bi-heart-fill"></i> for Esteban Karaputny Front-End Developer</p>
+          <p className='info-footer'>Made with  <i class="bi bi-heart-fill"></i> - Esteban Karaputny Front-End Developer</p>
         </div>
       </footer>
     </div>

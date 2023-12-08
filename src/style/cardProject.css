@@ -39,11 +39,13 @@
     object-position: center;
 }
 
-.content-info-project{
+.content-info-project-two{
     height: auto;
     padding: 1rem;
-    text-align: start;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
   
@@ -64,4 +66,23 @@
 .cards:hover > .card:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9, 0.9);
+}
+
+@media (max-width: 767px) {
+    .card{
+        height: 200px;
+        width: 130px;
+    }
+
+    .content-info-project-two{
+        padding: .5rem;
+        height: 30%;
+    }
+    .title-project{
+        font-size: .6rem;
+    }
+
+    .date-project{
+        font-size: .4rem;
+    }
 }

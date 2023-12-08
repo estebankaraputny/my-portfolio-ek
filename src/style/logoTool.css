@@ -19,3 +19,21 @@
     width: auto;
     height: 70%;
 }
+
+@media (max-width: 1023px) {
+    
+    .content-logoTool{
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+      }
+
+      .title-tools{
+        width: 80%;
+      }
+
+      .name-of-logo{
+        font-size: .7rem
+      }
+
+}

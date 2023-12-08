@@ -457,6 +457,14 @@ strong {
   align-items: center;
 }
 
+.content-form{
+  width: 40%;
+  height: 32rem;
+  padding: 1rem;
+  background-color: #ffffff1a;
+  border-radius: 15px;
+}
+
 .mail-contact{
   margin-bottom: .5rem;
   font-size: 1.2rem;
@@ -473,4 +481,174 @@ strong {
   height: 5rem;
   color: #fff;
   background-color: #000;
+}
+
+.iconMenu{
+  display: none;
+}
+
+
+@media (max-width: 1023px) {
+
+  /* INICIO  */
+  .content-information{
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .content-img-and-networks{
+    height: auto;
+  }
+
+  .my-photo{
+    margin: 3rem;
+  }
+
+  .content-perfil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+
+  /* ABOUT ME  */
+  .content-info-about{
+    flex-direction: column;
+  }
+
+  .presentacion, .content-education{
+    width: 100%;
+  }
+
+  /* PROJECTS  */
+
+  .content-projects{
+    flex-direction: column-reverse;
+  }
+
+  /* CONTACT  */
+
+  .content-contact{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content-info-contact, .content-form{
+    width: 80%;
+  }
+
+
+
+
+
+  @media (max-width: 767px){
+
+    /* NAV  */
+
+    .App-header{
+      bottom: 0;
+      background-color: #000000;
+      height: 5rem;
+    }
+
+    .list-nav{
+      justify-content: space-evenly;
+    }
+
+    .iconMenu{
+      display: inline-block;
+    }
+
+    /* HOME  */
+
+    .content-information{
+      padding-top: 4rem;
+      justify-content: start;
+    }
+
+    .content-networks{
+      display: none;
+    }
+
+    .my-photo{
+      width: 300px;
+      height: 300px;
+      object-position: center;
+      margin: 0;
+      margin-bottom: 4rem;
+    }
+
+    .my-name{
+      font-size: 2.2rem;
+      text-align: center;
+    }
+
+    .my-rol{
+      font-size: 1rem;
+    }
+
+    /* TOOLS  */
+
+    .tools{
+      padding: .5rem;
+    }
+
+    .content-info-project{
+      width: 100%;
+    }
+
+    .planet{
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-info-about{
+      padding: .7rem;
+    }
+
+    .presentacion{
+      padding: 0;
+    }
+
+    .description-me{
+      font-size: .9rem;
+    }
+
+    .content-education{
+      padding: 0;
+    }
+
+
+    .title-tools{
+      width: 100%;
+    }
+
+
+    /* CONTACTO  */
+    .content-info-contact{
+      width: 100%;
+    }
+
+    .content-contact{
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .mail-contact{
+      font-size: .9rem;
+    }
+
+    .content-form{
+      margin-top: 1rem;
+      width: 100%;
+      border-radius: 0;
+    }
+
+
+  }
+
 }
