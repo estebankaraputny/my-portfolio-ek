@@ -15,24 +15,24 @@ function App() {
             <ul className='list-nav'>
               <BotonNav 
               href="#inicio"
-              relacion="Home"
+              relacion="Inicio"
               >
                 <i class="bi bi-house iconMenu"></i>
               </BotonNav>
               <BotonNav href="#sobremi"
-                relacion="About me"
+                relacion="Sobre mí"
               >
                 <i class="bi bi-person iconMenu"></i>
               </BotonNav>
               <BotonNav
               href="#proyectos"
-              relacion="Projects"
+              relacion="Proyectos"
               >
                 <i class="bi bi-briefcase iconMenu"></i>
               </BotonNav>
               <BotonNav
               href="#contacto"
-              relacion="Contact"
+              relacion="Contacto"
               >
                
                 <i class="bi bi-mailbox-flag iconMenu"></i>
@@ -43,7 +43,7 @@ function App() {
       <main className="main">
         <div className="content-information" id='inicio'>
           <div className="content-perfil">
-            <h2 className="my-name">Hi, my name is Esteban</h2>
+            <h2 className="my-name">Hola, soy Esteban</h2>
             <div className="contenedor-rol">
               <p className="my-rol">
                 Front-End Developer
@@ -58,7 +58,7 @@ function App() {
               <img src={myPhoto} className="my-photo" alt="Foto de Esteban Karaputny" />
             </div>
             <div className='content-networks'>
-              <h3 className="title-networks">My networks</h3>
+              <h3 className="title-networks">Mis redes</h3>
               <ul className="my-networks">
                 <BotonRedes 
                   link="#redI" 
@@ -132,16 +132,16 @@ function App() {
           <div className='content-info-about'>
             <div className='presentacion'>
               <div className='content-info-project'>
-                <h3 className='title-tools'>About me</h3>
+                <h3 className='title-tools'>Sobre mí</h3>
                 <div className="planet jupiter"></div>
               </div>
-              <p className='description-me'>I consider myself a person who can contribute great value to the work team. Some of my strengths include motivation, leadership, communication, teamwork, empathy, and emotional management, among others. Also, I aspire to a job with a pleasant environment, with possibilities for constant improvement, learning and strengthening my knowledge with my colleagues.</p>
+              <p className='description-me'>Soy un joven desarrollador Front-End con un gran potencial y entusiasmo para ofrecer, dedicado a mi crecimiento personal y profesional. Me esfuerzo constantemente por aprender y mejorar, guiado por la disciplina. Creo firmemente en el desarrollo en un entorno motivador y colaborativo, donde trabajamos juntos para alcanzar objetivos comunes, apoyándonos mutuamente sin distinciones.
+                Me considero una persona que puede aportar gran valor al equipo de trabajo, entre algunas de mis fortalezas están la motivación, liderazgo, comunicación, el trabajo en equipo, la empatía, el manejo de emociones, entre otras.</p>
               <a href='./image/cv-de-Esteban-Karaputny.png' class="btn" download="Cv de Esteban Karaputny">
-                <strong>Download CV</strong>
+                <strong>Descargar CV</strong>
                 <div id="container-stars">
                   <div id="stars"></div>
                 </div>
-
                 <div id="glow">
                   <div class="circle"></div>
                   <div class="circle"></div>
@@ -149,7 +149,7 @@ function App() {
               </a>
             </div>
             <div className='content-education'>
-              <h3 className='education-title'><i class="bi bi-mortarboard-fill"></i> Education</h3>
+              <h3 className='education-title'><i class="bi bi-mortarboard-fill"></i> Educación</h3>
               <div className='target-education'>
                 <Curso 
                   nameCurse="Universidad Nacional Alturo Jauretche"
@@ -188,51 +188,45 @@ function App() {
         <div className='content-projects' id='proyectos'>
           <div className='cards'>
             <CardProyecto
-              linkProject="#" 
+              linkProject="https://listadetareasreactek.netlify.app/" 
               titleProject="To do List - React" 
-              proyectoImg="desarrollo.png"
-              dateProject="Developing..."
+              proyectoImg="todolist.png"
+              dateProject="Practica"
             />
             <CardProyecto
               linkProject="https://iniciatoysstore.netlify.app/" 
               titleProject="Ecommerce IniciaToy´s Store" 
-              proyectoImg="calculadora.jpg"
-              dateProject="Bootcamp Front-End in Accenture"
+              proyectoImg="desarrollo.png"
+              dateProject="En reparación"
             />
             <CardProyecto
               linkProject="https://tulugarclimaactual.netlify.app/" 
               titleProject="Web Clima - Tú lugar" 
               proyectoImg="clima.jpg"
-              dateProject="Practice"
+              dateProject="Práctica"
             />
             <CardProyecto
               linkProject="https://argenpackcorrugadossa.netlify.app/" 
-              titleProject="Web remastering of Argenpack Corrugados." 
+              titleProject="Rematerización web de Argenpack Corrugados." 
               proyectoImg="argenpack.jpg"
               dateProject="Programa #TúEmpleo - Fundación EMPUJAR"
             />
             <CardProyecto
               linkProject="https://calculadora-reactjs-ek.netlify.app/" 
-              titleProject="React calculator" 
+              titleProject="Calculadora React" 
               proyectoImg="calculadora.jpg"
-              dateProject="Practice"
-            />
-            <CardProyecto
-              linkProject="#" 
-              titleProject="PokeApi" 
-              proyectoImg="calculadora.jpg"
-              dateProject="Bootcamp Front-End in Accenture"
+              dateProject="Práctica"
             />
           </div>
           <div className='content-info-project'>
-            <h3 className='title-tools'>Projects</h3>
+            <h3 className='title-tools'>Proyectos</h3>
             <div className='planet eart'></div>
           </div>
         </div>
         <div className='content-contact' id='contacto'>
           <div className='content-info-contact'>
             <div className='content-info-project'>
-              <h3 className='title-tools'>Contact</h3>
+              <h3 className='title-tools'>Contacto</h3>
               <div className='planet mart'></div>
             </div>
             <div>
@@ -273,8 +267,8 @@ function App() {
       </main>
       <footer className='content-footer'>
         <div className='cont-info-footer'>
-          <p className='info-footer'><i class="bi bi-c-circle"></i> Copyright 2023 - All Rights Reserved</p>
-          <p className='info-footer'>Made with  <i class="bi bi-heart-fill"></i> - Esteban Karaputny Front-End Developer</p>
+          <p className='info-footer'><i class="bi bi-c-circle"></i> Copyright 2023 - Todos los derechos reservados</p>
+          <p className='info-footer'>Hecho con  <i class="bi bi-heart-fill"></i> - Esteban Karaputny Front-End Developer</p>
         </div>
       </footer>
     </div>

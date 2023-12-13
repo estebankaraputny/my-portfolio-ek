@@ -37,14 +37,14 @@ const ContactUs = () =>{
     return (
             <form ref={refForm} className='form' action="" onSubmit={sendForm}>
               <div className='cont-form'>
-                <label className='label-form' for="company"><i class="bi bi-buildings-fill"></i> Company</label>
-                <input type='text'  className='input-form' id='company'  name='company' required placeholder="Name of the company"/>
-                <label className='label-form' for="userName"><i class="bi bi-person-fill"></i> Recruiter</label>
-                <input type='text' className='input-form' id='userName' name='userName' required placeholder="Full name"/>
+                <label className='label-form' for="company"><i class="bi bi-buildings-fill"></i> Empresa</label>
+                <input type='text'  className='input-form' id='company'  name='company' required placeholder="Nombre de la empresa"/>
+                <label className='label-form' for="userName"><i class="bi bi-person-fill"></i> Reclutador</label>
+                <input type='text' className='input-form' id='userName' name='userName' required placeholder="Nombre completo"/>
                 <label className='label-form' for="mail"><i class="bi bi-envelope-at-fill"></i> Email</label>
                 <input type='mail' className='input-form' id='mail' name='mail' required placeholder="Email"/>
-                <label className='label-form' for="message"><i class="bi bi-chat-dots-fill"></i> Message</label>
-                <textarea className='message-form' id='message' name='message' required placeholder="Enter your message"></textarea>
+                <label className='label-form' for="message"><i class="bi bi-chat-dots-fill"></i> Mensaje</label>
+                <textarea className='message-form' id='message' name='message' required placeholder="Ingrese su mensaje"></textarea>
                 <button class="btn btn-form">
                 <strong>Enviar</strong>
                 <div id="container-stars">
