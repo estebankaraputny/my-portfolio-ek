@@ -6,6 +6,7 @@ import ImagenesTools from './components/imgTools';
 import Curso from './components/studyCurse';
 import CardProyecto from './components/cardProject';
 import ContactUs  from './components/contactUs';
+import CvEsteban from "./image/Cv-de-Esteban-Karaputny.pdf"
 
 function App() {
   return (
@@ -136,8 +137,9 @@ function App() {
                 <div className="planet jupiter"></div>
               </div>
               <p className='description-me'>Soy un joven desarrollador Front-End con un gran potencial y entusiasmo para ofrecer, dedicado a mi crecimiento personal y profesional. Me esfuerzo constantemente por aprender y mejorar, guiado por la disciplina. Creo firmemente en el desarrollo en un entorno motivador y colaborativo, donde trabajamos juntos para alcanzar objetivos comunes, apoyándonos mutuamente sin distinciones.
-                Me considero una persona que puede aportar gran valor al equipo de trabajo, entre algunas de mis fortalezas están la motivación, liderazgo, comunicación, el trabajo en equipo, la empatía, el manejo de emociones, entre otras.</p>
-              <a href='./image/cv-de-Esteban-Karaputny.png' class="btn" download="Cv de Esteban Karaputny">
+                Me considero una persona que puede aportar gran valor al equipo de trabajo, entre algunas de mis fortalezas están la motivación, liderazgo, comunicación, el trabajo en equipo, la empatía, el manejo de emociones, entre otras.
+              </p>
+              <a href={CvEsteban} class="btn" download="Cv-de-Esteban Karaputny.pdf">
                 <strong>Descargar CV</strong>
                 <div id="container-stars">
                   <div id="stars"></div>
